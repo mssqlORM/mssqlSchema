@@ -7,7 +7,7 @@
 ## [1.0.0] - 2026-07-04
 
 ### Added
-- Initial release with `.mssql` schema format
+- Initial release with `.an5` schema format
 - SQL Server native type support
 - Model, field, and relation definitions
 - `@@map`, `@@unique`, `@@index` attributes

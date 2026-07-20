@@ -1,13 +1,13 @@
-# mssqlSchema
+# an5Schema
 
-Sample schema definitions for MSSQL ORM. Contains `.mssql` files that define models using SQL Server native types.
+Sample schema definitions for AN5 ORM. Contains `.an5` files that define models using SQL Server native types.
 
 ## Structure
 
 ```
-mssqlSchema/
-├── test1.mssql    # User model
-├── test2.mssql    # Order model
+an5Schema/
+├── test1.an5    # User model
+├── test2.an5    # Order model
 └── package.json
 ```
 
@@ -15,7 +15,7 @@ mssqlSchema/
 
 ### Models
 
-```mssql
+```an5
 model ModelName {
   fieldName SQL_TYPE [attributes]
 }
@@ -73,7 +73,7 @@ model ModelName {
 
 ## Example
 
-```mssql
+```an5
 model User {
   id        NVARCHAR(1000) @id @default(uuid())
   email     NVARCHAR(255)  @unique
@@ -98,7 +98,7 @@ model Order {
 
 These schema files are used by:
 
-1. **mssqlOrm/generator** — Generates TypeScript, Python, and .NET code
-2. **mssqlOrm/push** — Creates/updates database tables
-3. **mssqlOrm/pull** — Introspects database and updates schema
-4. **mssqlOrmVScode** — Provides syntax highlighting and formatting
+1. **an5Orm/generator** — Generates TypeScript, Python, and .NET code
+2. **an5Orm/push** — Creates/updates database tables
+3. **an5Orm/pull** — Introspects database and updates schema
+4. **an5OrmVScode** — Provides syntax highlighting and formatting
